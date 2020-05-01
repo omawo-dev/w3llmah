@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" styleClass="dashboard-title" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="w3llmah.ui.slider.SliderPanelController">
+   <children>
+      <JFXButton fx:id="btnTable" onAction="#onTableBtnClick" prefHeight="42.0" prefWidth="180.0" style="-fx-background-color: #5ddfd7;" text="جدول الطلاب" VBox.vgrow="NEVER" />
+      <JFXButton fx:id="btnChart" onAction="#onChartBtnClick" prefHeight="42.0" prefWidth="180.0" style="-fx-background-color: #5ddfd7;" text="الرسم البياني" VBox.vgrow="NEVER" />
+      <JFXButton fx:id="btnRingsTable" layoutX="10.0" layoutY="186.0" onAction="#onRingsTableBtnClick" prefHeight="42.0" prefWidth="180.0" style="-fx-background-color: #5ddfd7;" text="الحلقات" />
+      <JFXButton fx:id="btnAddRing" onAction="#onAddRingBtnClick" prefHeight="42.0" prefWidth="180.0" style="-fx-background-color: #5ddfd7;" text="اضافة حلقة" />
+      <JFXButton fx:id="btnAddStudent" onAction="#onAddStudentBtnClick" prefHeight="42.0" prefWidth="180.0" style="-fx-background-color: #5ddfd7;" text="اضافة طالب" />
+      <JFXButton fx:id="btnRingsCountChart" layoutX="10.0" layoutY="238.0" onAction="#onRingsCountChartBtnClick" prefHeight="42.0" prefWidth="180.0" style="-fx-background-color: #5ddfd7;" text="الرسم البياني" />
+      <JFXButton fx:id="btnStudentDash" layoutX="10.0" layoutY="290.0" onAction="#onStudentDashBtnClick" prefHeight="42.0" prefWidth="180.0" style="-fx-background-color: #5ddfd7;" text="الجدول" />
+      <JFXButton fx:id="btnStudentChart" layoutX="10.0" layoutY="82.0" onAction="#onStudentChartBtnClick" prefHeight="42.0" prefWidth="180.0" style="-fx-background-color: #5ddfd7;" text="الرسم البياني" />
+      <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+         <children>
+            <JFXButton fx:id="btnLogout" onAction="#onLogoutBtnClick" prefHeight="20.0" prefWidth="96.0" style="-fx-background-color: #5ddfd7;" text="تسجيل الخروج" VBox.vgrow="NEVER" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" top="20.0" />
+   </padding>
+</VBox>

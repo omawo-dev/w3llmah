@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.dashboard-title {
+    -fx-background-color: #009688;
+    -fx-text-fill: #ffffff;
+}
+
+.side-nav {
+    -fx-background-color: #009688;
+}
+
+.logo-container {
+    -fx-background-color: #a7ffeb;
+}

@@ -1,0 +1,41 @@
+.button1{
+    -fx-background-color: #009688;
+    -fx-text-fill:#ffffff;
+}
+.button1:hover{
+    -fx-text-fill:#431FA0;
+}
+.button1:pressed{
+    -fx-text-fill:#80AFF5;
+
+}
+.linear-grad{
+    -fx-background-color:linear-gradient(to bottom left,#009688,#00776B)
+}
+.linear-grad1{
+    -fx-background-color:linear-gradient(to bottom left,#C6E7E4,#fff)
+}
+.button2{
+    -fx-background-color:#B5CBEB;
+    -fx-background-radius: 5;
+    -fx-text-fill:#371897;
+    -fx-border-color: #6F4CBB;
+    -fx-border-radius: 5;
+}
+.button2:hover{
+    -fx-background-color:#E4EEFD;
+}
+
+.dashboard-title {
+    -fx-background-color: #009688;
+    -fx-text-fill: #ffffff;
+    
+}
+
+.side-nav {
+    -fx-background-color: #009688;
+}
+
+.logo-container {
+    -fx-background-color: #a7ffeb;
+}

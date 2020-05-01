@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pnAnchorPane" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="w3llmah.ui.admin.studentsRing.StudentRingController">
+   <children>
+      <HBox prefHeight="600.0" prefWidth="816.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+                     <children>
+                        <Label fx:id="lblCurrentDate" prefHeight="37.0" prefWidth="111.0" styleClass="dashboard-title" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="dashboard-title" text="الحلقة" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="180.0" styleClass="logo-container">
+                           <children>
+                              <ImageView fitHeight="47.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../assets/images/logo-black.png" />
+                                 </image>
+                              </ImageView>
+                              <Pane prefHeight="46.0" prefWidth="57.0">
+                                 <children>
+                                    <JFXHamburger fx:id="hamb" alignment="CENTER_LEFT" layoutX="23.0" layoutY="1.0" prefHeight="46.0" prefWidth="31.0" rotate="180.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXHamburger>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="47.0" prefWidth="609.0">
+                                       <children>
+                                          <Label fx:id="nameTeacherLabel" alignment="CENTER_RIGHT" />
+                                          <Label fx:id="TeacherLabel" contentDisplay="CENTER" prefHeight="42.0" prefWidth="100.0">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" style="-fx-background-color: white;">
+                                 <children>
+                                    <VBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <TableView fx:id="ringsTable" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="474.0" prefWidth="604.0" stylesheets="@../../../../assets/styles/jfx-table-view.css" VBox.vgrow="ALWAYS">
+                                             <columns>
+                                                <TableColumn fx:id="tblcStudentName" maxWidth="1.7976931348623157E308" minWidth="118.3333740234375" prefWidth="241.666748046875" text="اسم الطالب" />
+                                                <TableColumn fx:id="tblcUsername" prefWidth="230.333251953125" text="اسم المستخدم" />
+                                                <TableColumn fx:id="tblcStudentState" maxWidth="1.7976931348623157E308" minWidth="101.0" onEditCommit="#onStudentStateEditCommit" prefWidth="280.6666259765625" text="الحالة" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <JFXDrawer fx:id="drawer" defaultDrawerSize="180.0" direction="RIGHT" minWidth="0.0" miniDrawerSize="0.0" prefWidth="0.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../../../assets/styles/global.css" />
+      <URL value="@../../teacher/dashboard/teacherdashboard.css" />
+   </stylesheets>
+</AnchorPane>
